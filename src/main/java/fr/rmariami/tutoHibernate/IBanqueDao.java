@@ -17,7 +17,7 @@ public interface IBanqueDao {
 
     void addEmplyeToGroupe(Long codeEmp, Long codeGr);
 
-    Compte addCompte(Compte compte);
+    Compte addCompte(Compte compte, Long codeCli, Long codeEmp);
 
     Operation addOperation(Operation operation, Long codeCpt, Long codeEmp);
 

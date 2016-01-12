@@ -19,19 +19,19 @@ public class Compte implements Serializable {
     private double solde;
     @ManyToOne
     @JoinColumn(name = "CODE_CLI")
-    private Compte compte;
+    private Client client;
     @ManyToOne
     @JoinColumn(name = "CODE_EMP")
     private Employe employe;
     @OneToMany(mappedBy = "compte")
     private Collection<Operation> operations;
 
-    public Compte getCompte() {
-        return compte;
+    public Client getClient() {
+        return client;
     }
 
-    public void setCompte(Compte compte) {
-        this.compte = compte;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public Employe getEmploye() {

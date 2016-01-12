@@ -24,4 +24,36 @@ public class Employe implements Serializable{
             inverseJoinColumns = @JoinColumn(name = "CODE_GR"))
     private Collection<Groupe> groupes;
 
+    public String getNomEmploye() {
+        return nomEmploye;
+    }
+
+    public void setNomEmploye(String nomEmploye) {
+        this.nomEmploye = nomEmploye;
+    }
+
+    public Employe getEmployeSup() {
+        return employeSup;
+    }
+
+    public void setEmployeSup(Employe employeSup) {
+        this.employeSup = employeSup;
+    }
+
+    public Collection<Groupe> getGroupes() {
+        return groupes;
+    }
+
+    public void setGroupes(Collection<Groupe> groupes) {
+        this.groupes = groupes;
+    }
+
+    public Long getCodeEmploye() {
+
+        return codeEmploye;
+    }
+
+    public void setCodeEmploye(Long codeEmploye) {
+        this.codeEmploye = codeEmploye;
+    }
 }
